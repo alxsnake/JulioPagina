@@ -1,0 +1,69 @@
+Crea un sitio web completo para un consultorio médico usando HTML5, Bootstrap 5, CSS3 y JavaScript vanilla. Todo debe funcionar en un solo archivo HTML (sin backend). El sitio tiene dos vistas: pública y administrador.
+
+## VISTA PÚBLICA
+
+### Navegación
+- Navbar fija con logo/nombre del doctor, links a secciones (Inicio, Sobre Mí, Procedimientos, Galería, Contacto)
+- Botón flotante de WhatsApp siempre visible en esquina inferior derecha
+- Links a TikTok y WhatsApp en navbar y footer
+
+### Secciones:
+1. **Hero**: Imagen de fondo grande, nombre del doctor, especialidad, slogan, botón "Agendar Cita" que abre WhatsApp
+2. **Sobre Mí**: Foto del doctor (placeholder), biografía, formación académica, certificaciones, años de experiencia
+3. **Procedimientos**: Grid de cards con los procedimientos (usar 6 procedimientos de ejemplo como Rinoplastía, Liposucción, Lifting Facial, Aumento de Labios, Blefaroplastia, Abdominoplastía). Cada card tiene imagen placeholder, título, descripción corta y botón "Más Info"
+4. **Galería de Resultados**: Grid de imágenes tipo antes/después organizadas en categorías filtrables. Las imágenes se cargan dinámicamente desde localStorage (las sube el admin). Si no hay imágenes, mostrar placeholders con texto "Próximamente"
+5. **Testimonios**: Carousel con testimonios de pacientes (datos de ejemplo)
+6. **Contacto**: Dirección, teléfono, email, horarios de atención, mapa embebido placeholder, formulario de contacto simple (solo frontend)
+7. **Footer**: Redes sociales (TikTok, WhatsApp, Instagram), aviso de privacidad, copyright
+
+### Datos de contacto de ejemplo:
+- WhatsApp: 33-1234-5678
+- TikTok: @doctornombre
+- Dirección: Av. Américas 1254, Col. Providencia, Guadalajara, Jalisco
+- Teléfono: (33) 1234-5678
+- Email: contacto@doctornombre.com
+
+## VISTA ADMINISTRADOR
+
+- Se accede con un botón discreto en el footer "Admin" que pide contraseña (usar "admin123" hardcodeada)
+- Panel con sidebar de navegación propio
+
+### Funcionalidades del Admin:
+1. **Dashboard**: Resumen de imágenes subidas por sección
+2. **Gestor de Galería**:
+   - Subir imágenes desde la computadora usando input type file
+   - Las imágenes se convierten a base64 y se guardan en localStorage
+   - Preview de cómo se verá la imagen en la vista pública antes de guardar
+   - Asignar cada imagen a una categoría (Rinoplastía, Liposucción, etc.)
+   - Marcar como "Antes" o "Después"
+   - Reordenar imágenes con botones subir/bajar
+   - Eliminar imágenes individuales
+3. **Gestor de Procedimientos**:
+   - Cambiar la imagen de cada card de procedimiento
+   - Preview en tiempo real de cómo se ve el cambio
+4. **Gestor de Hero/Sobre Mí**:
+   - Cambiar imagen del hero
+   - Cambiar foto del doctor en "Sobre Mí"
+   - Preview de cómo se verá
+
+## DISEÑO Y ESTÉTICA
+
+- Estilo premium/médico: paleta de colores sofisticada (tonos crema, dorado suave, verde oscuro o azul petróleo)
+- Tipografía elegante: usar Google Fonts (una serif para títulos como Playfair Display, una sans-serif para cuerpo como DM Sans)
+- Animaciones suaves al hacer scroll (intersection observer para fade-in)
+- Diseño fully responsive (mobile-first)
+- Cards con sombras suaves y bordes redondeados
+- Transiciones hover elegantes en botones e imágenes
+- Uso de íconos de Bootstrap Icons
+- Secciones con fondos alternados para dar ritmo visual
+- Imágenes con efecto hover de zoom suave
+
+## REQUISITOS TÉCNICOS
+- Todo en UN solo archivo HTML
+- Sin dependencias de backend, todo funciona con localStorage
+- Bootstrap 5 desde CDN
+- Bootstrap Icons desde CDN  
+- Google Fonts desde CDN
+- JavaScript vanilla (no frameworks)
+- Código bien comentado y organizado
+- Las imágenes placeholder deben ser divs con color de fondo y texto, no URLs externas

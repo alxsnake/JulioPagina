@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. Julio Hinojosa | Cardiología</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- WhatsApp float -->
+<a href="https://wa.me/523312345678" target="_blank" class="wa-float" title="WhatsApp">
+  <i class="bi bi-whatsapp"></i>
+</a>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar">
+  <div class="container">
+    <a class="navbar-brand" href="#inicio">
+      Dr. JulioHinojosa
+      <span>Cardiología &amp; Hemodinamia</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre Mí</a></li>
+        <li class="nav-item"><a class="nav-link" href="#procedimientos">Procedimientos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+      </ul>
+      <div class="nav-social d-flex align-items-center">
+        <a href="https://tiktok.com/@doctornombre" target="_blank" title="TikTok"><i class="bi bi-tiktok"></i></a>
+        <a href="https://wa.me/523312345678" target="_blank" title="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section id="inicio" style="padding:0;">
+  <div id="hero">
+    <div class="hero-bg" id="heroBg"></div>
+    <div class="container hero-content w-100">
+      <div class="row align-items-center" style="min-height:100vh;padding-top:80px;">
+        <div class="col-lg-7 py-5">
+          <p class="hero-eyebrow fade-in">Cardiología &amp;Hemodinamia</p>
+          <h1 class="hero-title fade-in">Dr. Julio<br><span class="gold">Hinojosa</span></h1>
+          <p class="hero-spec fade-in">Cardiólogo</p>
+          <p class="hero-slogan fade-in">Transformando vidas con excelencia médica, técnica avanzada y un enfoque centrado en tu bienestar y resultados naturales.</p>
+          <div class="d-flex flex-wrap gap-3 fade-in">
+            <a href="https://wa.me/523312345678?text=Hola,%20me%20gustaría%20agendar%20una%20cita" target="_blank" class="btn-gold">
+              <i class="bi bi-calendar2-check"></i> Agendar Cita
+            </a>
+            <a href="#procedimientos" class="btn-outline-gold">Ver Procedimientos</a>
+          </div>
+          <div class="hero-stats fade-in">
+            <div><div class="stat-num">15+</div><div class="stat-lbl">Años de<br>Experiencia</div></div>
+            <div><div class="stat-num">2,500+</div><div class="stat-lbl">Pacientes<br>Satisfechos</div></div>
+            <div><div class="stat-num">12</div><div class="stat-lbl">Certificaciones<br>Nacionales</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SOBRE MÍ ===== -->
+<section id="sobre-mi" class="sec">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-5 fade-in-left">
+        <div class="doc-photo" id="docPhotoWrap">
+          <div class="doc-placeholder" id="docPhotoPlaceholder">
+            <i class="bi bi-person-circle"></i>
+            <span>Foto del Doctor</span>
+          </div>
+          <img src="" id="docPhotoImg" alt="Dr. JulioHinojosa" style="display:none;width:100%;height:500px;object-fit:cover;">
+        </div>
+      </div>
+      <div class="col-lg-7 fade-in-right">
+        <p class="sec-lbl">Conoce al Doctor</p>
+        <h2 class="sec-title">Dr. JulioHinojosa</h2>
+        <div class="sec-divider"></div>
+        <p class="text-muted mb-3" style="line-height:1.85;">Con más de 15 años de experiencia en Cardiología y Hemodinamia, el Dr. Julio Hinojosa se ha consolidado como uno de los cirujanos más reconocidos de Guadalajara. Su filosofía se basa en resultados naturales, seguridad del paciente y una atención completamente personalizada.</p>
+        <p class="text-muted mb-4" style="line-height:1.85;">Graduado con honores de la Universidad de Guadalajara, realizó su especialidad en el Hospital General de México y especialista en Hemodinamia.</p>
+        <div class="cred-badge"><div class="cred-icon"><i class="bi bi-award"></i></div><div><div class="cred-text">Médico Cirujano — Universidad de Guadalajara</div><div class="cred-sub">Graduado con Mención Honorífica, 2005</div></div></div>
+        <div class="cred-badge"><div class="cred-icon"><i class="bi bi-patch-check"></i></div><div><div class="cred-text">Especialidad en Cirugía Plástica — HGM, CDMX</div><div class="cred-sub">Certificado por el CMCPER, 2009</div></div></div>
+        <div class="cred-badge"><div class="cred-icon"><i class="bi bi-globe"></i></div><div><div class="cred-text">Fellowship Internacional — NYU Langone Health</div><div class="cred-sub">Cirugía Reconstructiva y Microcirugía, 2011</div></div></div>
+        <div class="cred-badge"><div class="cred-icon"><i class="bi bi-shield-check"></i></div><div><div class="cred-text">Miembro Titular — SMCP</div><div class="cred-sub">Sociedad Mexicana de Cirugía Plástica, Estética y Reconstructiva</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROCEDIMIENTOS ===== -->
+<section id="procedimientos" class="sec sec-alt">
+  <div class="container">
+    <div class="text-center mb-5 fade-in">
+      <p class="sec-lbl">Nuestros Servicios</p>
+      <h2 class="sec-title">Procedimientos Especializados</h2>
+      <div class="sec-divider mx-auto"></div>
+      <p class="text-muted" style="max-width:580px;margin:0 auto;">Ofrecemos una amplia gama de procedimientos estéticos y reconstructivos con las técnicas más avanzadas y seguras del mercado.</p>
+    </div>
+    <div class="row g-4" id="proceduresGrid"></div>
+  </div>
+</section>
+
+<!-- ===== GALERÍA ===== -->
+<section id="galeria" class="sec">
+  <div class="container">
+    <div class="text-center mb-5 fade-in">
+      <p class="sec-lbl">Resultados Reales</p>
+      <h2 class="sec-title">Galería de Transformaciones</h2>
+      <div class="sec-divider mx-auto"></div>
+      <p class="text-muted" style="max-width:580px;margin:0 auto;">Resultados reales de nuestros pacientes. Cada transformación refleja nuestro compromiso con la excelencia.</p>
+    </div>
+    <div class="d-flex flex-wrap gap-2 justify-content-center mb-5 fade-in" id="galFilters"></div>
+    <div class="row g-3" id="galGrid"></div>
+  </div>
+</section>
+
+<!-- ===== TESTIMONIOS ===== -->
+<section class="sec sec-alt">
+  <div class="container">
+    <div class="text-center mb-5 fade-in">
+      <p class="sec-lbl">Lo que dicen nuestros pacientes</p>
+      <h2 class="sec-title">Testimonios</h2>
+      <div class="sec-divider mx-auto"></div>
+    </div>
+    <div id="testCarousel" class="carousel slide fade-in" data-bs-ride="carousel" data-bs-interval="5000">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row justify-content-center"><div class="col-md-8">
+            <div class="test-card">
+              <p class="test-text">"El Dr. Hinojosa cambió mi vida. Desde la primera consulta hasta el seguimiento postoperatorio, la atención fue excepcional. Los resultados superaron todas mis expectativas. Completamente natural y justo lo que quería."</p>
+              <div class="d-flex align-items-center gap-3">
+                <div class="test-avatar"><i class="bi bi-person"></i></div>
+                <div><div style="font-weight:600;color:var(--teal-dark);">María G.</div><div style="font-size:.78rem;color:var(--text-muted);">Rinoplastía — Guadalajara</div><div class="test-stars mt-1"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div></div>
+              </div>
+            </div>
+          </div></div>
+        </div>
+        <div class="carousel-item">
+          <div class="row justify-content-center"><div class="col-md-8">
+            <div class="test-card">
+              <p class="test-text">"Profesionalismo al 100%. El equipo del consultorio es muy atento y el doctor explica todo con mucha claridad. Después de mi liposucción me siento con una confianza que no tenía hace años. Totalmente recomendado."</p>
+              <div class="d-flex align-items-center gap-3">
+                <div class="test-avatar"><i class="bi bi-person"></i></div>
+                <div><div style="font-weight:600;color:var(--teal-dark);">Laura P.</div><div style="font-size:.78rem;color:var(--text-muted);">Liposucción — Zapopan</div><div class="test-stars mt-1"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div></div>
+              </div>
+            </div>
+          </div></div>
+        </div>
+        <div class="carousel-item">
+          <div class="row justify-content-center"><div class="col-md-8">
+            <div class="test-card">
+              <p class="test-text">"Llevaba años pensando en hacerme el lifting y finalmente me animé con el Dr. Hinojosa. El resultado es increíblemente natural, nadie sabe que me operé, solo dicen que me veo muy bien descansada. Mil gracias, doctor."</p>
+              <div class="d-flex align-items-center gap-3">
+                <div class="test-avatar"><i class="bi bi-person"></i></div>
+                <div><div style="font-weight:600;color:var(--teal-dark);">Carmen V.</div><div style="font-size:.78rem;color:var(--text-muted);">Lifting Facial — Guadalajara</div><div class="test-stars mt-1"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div></div>
+              </div>
+            </div>
+          </div></div>
+        </div>
+        <div class="carousel-item">
+          <div class="row justify-content-center"><div class="col-md-8">
+            <div class="test-card">
+              <p class="test-text">"Muy contenta con mi abdominoplastía. El Dr. Hinojosa es muy detallista y se nota que ama su trabajo. El consultorio es moderno y limpio, y el seguimiento postoperatorio fue muy profesional. ¡Resultados espectaculares!"</p>
+              <div class="d-flex align-items-center gap-3">
+                <div class="test-avatar"><i class="bi bi-person"></i></div>
+                <div><div style="font-weight:600;color:var(--teal-dark);">Sandra M.</div><div style="font-size:.78rem;color:var(--text-muted);">Abdominoplastía — Puerto Vallarta</div><div class="test-stars mt-1"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i></div></div>
+              </div>
+            </div>
+          </div></div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#testCarousel" data-bs-slide="prev">
+        <span style="background:var(--teal);border-radius:50%;width:38px;height:38px;display:flex;align-items:center;justify-content:center;"><i class="bi bi-chevron-left text-white"></i></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testCarousel" data-bs-slide="next">
+        <span style="background:var(--teal);border-radius:50%;width:38px;height:38px;display:flex;align-items:center;justify-content:center;"><i class="bi bi-chevron-right text-white"></i></span>
+      </button>
+      <div class="carousel-indicators" style="bottom:-2.5rem;">
+        <button type="button" data-bs-target="#testCarousel" data-bs-slide-to="0" class="active" style="background:var(--teal);width:8px;height:8px;border-radius:50%;border:none;"></button>
+        <button type="button" data-bs-target="#testCarousel" data-bs-slide-to="1" style="background:var(--teal);width:8px;height:8px;border-radius:50%;border:none;"></button>
+        <button type="button" data-bs-target="#testCarousel" data-bs-slide-to="2" style="background:var(--teal);width:8px;height:8px;border-radius:50%;border:none;"></button>
+        <button type="button" data-bs-target="#testCarousel" data-bs-slide-to="3" style="background:var(--teal);width:8px;height:8px;border-radius:50%;border:none;"></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACTO ===== -->
+<section id="contacto" class="sec">
+  <div class="container">
+    <div class="text-center mb-5 fade-in">
+      <p class="sec-lbl">Estamos Para Ti</p>
+      <h2 class="sec-title">Contacto &amp; Ubicación</h2>
+      <div class="sec-divider mx-auto"></div>
+    </div>
+    <div class="row g-4">
+      <div class="col-lg-5">
+        <div class="row g-3">
+          <div class="col-12 fade-in">
+            <div class="contact-card">
+              <div class="contact-icon"><i class="bi bi-geo-alt"></i></div>
+              <h6 style="font-family:'Playfair Display',serif;color:var(--teal-dark);">Dirección</h6>
+              <p class="text-muted mb-0" style="font-size:.88rem;">Av. Pablo Casals 640, Col. Prados Providencia<br>Guadalajara, Jalisco, C.P. 44670</p>
+            </div>
+          </div>
+          <div class="col-sm-6 fade-in">
+            <div class="contact-card">
+              <div class="contact-icon"><i class="bi bi-telephone"></i></div>
+              <h6 style="font-family:'Playfair Display',serif;color:var(--teal-dark);">Teléfono</h6>
+              <a href="tel:+523312345678" class="text-muted" style="font-size:.88rem;text-decoration:none;">(33) 1234-5678</a>
+            </div>
+          </div>
+          <div class="col-sm-6 fade-in">
+            <div class="contact-card">
+              <div class="contact-icon"><i class="bi bi-envelope"></i></div>
+              <h6 style="font-family:'Playfair Display',serif;color:var(--teal-dark);">Email</h6>
+              <a href="mailto:contacto@doctornombre.com" class="text-muted" style="font-size:.82rem;text-decoration:none;word-break:break-all;">contacto@doctornombre.com</a>
+            </div>
+          </div>
+          <div class="col-12 fade-in">
+            <div class="contact-card">
+              <div class="contact-icon"><i class="bi bi-clock"></i></div>
+              <h6 style="font-family:'Playfair Display',serif;color:var(--teal-dark);margin-bottom:.75rem;">Horarios de Atención</h6>
+              <table class="hours-tbl w-100"><tr><td>Lunes — Viernes</td><td>9:00 — 19:00</td></tr><tr><td>Sábado</td><td>9:00 — 14:00</td></tr><tr><td>Domingo</td><td>Cerrado</td></tr></table>
+            </div>
+          </div>
+          <div class="col-12 fade-in">
+            <div class="map-ph">
+              <i class="bi bi-map"></i>
+              <span>Av. Pablo Casals 640, Col.Prados Providencia</span>
+              <span style="font-size:.75rem;">Guadalajara, Jalisco</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-7 fade-in-right">
+        <div class="contact-card">
+          <h5 style="font-family:'Playfair Display',serif;color:var(--teal-dark);margin-bottom:1.5rem;">Envíanos un Mensaje</h5>
+          <form id="contactForm" onsubmit="handleContact(event)">
+            <div class="row g-3">
+              <div class="col-sm-6"><label class="fl">Nombre completo</label><input type="text" class="fc" placeholder="Tu nombre" required></div>
+              <div class="col-sm-6"><label class="fl">Teléfono</label><input type="tel" class="fc" placeholder="(33) 0000-0000"></div>
+              <div class="col-12"><label class="fl">Correo electrónico</label><input type="email" class="fc" placeholder="correo@ejemplo.com" required></div>
+              <div class="col-12">
+                <label class="fl">Procedimiento de interés</label>
+                <select class="fc"><option value="">Selecciona un procedimiento</option><option>Cateterismo</option><option>Liposucción</option><option>Lifting Facial</option><option>Aumento de Labios</option><option>Blefaroplastia</option><option>Abdominoplastía</option><option>Otro</option></select>
+              </div>
+              <div class="col-12"><label class="fl">Mensaje</label><textarea class="fc" rows="4" placeholder="¿En qué podemos ayudarte?" required></textarea></div>
+              <div class="col-12"><button type="submit" class="btn-gold w-100" style="justify-content:center;"><i class="bi bi-send"></i> Enviar Mensaje</button></div>
+              <div class="col-12" id="contactOk" style="display:none;">
+                <div style="background:rgba(44,74,82,.08);border-radius:var(--radius-sm);padding:.85rem 1rem;color:var(--teal-dark);font-size:.88rem;">
+                  <i class="bi bi-check-circle-fill me-2" style="color:var(--teal);"></i>¡Mensaje enviado! Te contactaremos a la brevedad.
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="pt-5 pb-3">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <div class="ft-brand">Dr. JulioHinojosa</div>
+        <p style="font-size:.875rem;line-height:1.75;max-width:290px;">Cardiólogo Intervencionista con especialidad en Hemodinamia.</p>
+        <div class="ft-social mt-3">
+          <a href="https://tiktok.com/@doctornombre" target="_blank" title="TikTok"><i class="bi bi-tiktok"></i></a>
+          <a href="https://wa.me/523312345678" target="_blank" title="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+          <a href="#" title="Instagram"><i class="bi bi-instagram"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-2 col-sm-4">
+        <h6 style="color:rgba(255,255,255,.9);font-family:'Playfair Display',serif;margin-bottom:1rem;">Navegación</h6>
+        <ul style="list-style:none;padding:0;font-size:.875rem;">
+          <li class="mb-2"><a href="#inicio" style="color:rgba(255,255,255,.55);text-decoration:none;">Inicio</a></li>
+          <li class="mb-2"><a href="#sobre-mi" style="color:rgba(255,255,255,.55);text-decoration:none;">Sobre Mí</a></li>
+          <li class="mb-2"><a href="#procedimientos" style="color:rgba(255,255,255,.55);text-decoration:none;">Procedimientos</a></li>
+          <li class="mb-2"><a href="#galeria" style="color:rgba(255,255,255,.55);text-decoration:none;">Galería</a></li>
+          <li class="mb-2"><a href="#contacto" style="color:rgba(255,255,255,.55);text-decoration:none;">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-sm-4">
+        <h6 style="color:rgba(255,255,255,.9);font-family:'Playfair Display',serif;margin-bottom:1rem;">Procedimientos</h6>
+        <ul style="list-style:none;padding:0;font-size:.875rem;">
+          <li class="mb-2"><a href="#procedimientos" style="color:rgba(255,255,255,.55);text-decoration:none;">Cateterismo</a></li>
+          <li class="mb-2"><a href="#procedimientos" style="color:rgba(255,255,255,.55);text-decoration:none;">Ecocardiograma Intravascular
+</a></li>
+          <li class="mb-2"><a href="#procedimientos" style="color:rgba(255,255,255,.55);text-decoration:none;">Estudio Funcional Coronario
+</a></li>
+          <li class="mb-2"><a href="#procedimientos" style="color:rgba(255,255,255,.55);text-decoration:none;">Otro</a></li>
+          <li class="mb-2"><a href="#procedimientos" style="color:rgba(255,255,255,.55);text-decoration:none;">Otro</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-sm-4">
+        <h6 style="color:rgba(255,255,255,.9);font-family:'Playfair Display',serif;margin-bottom:1rem;">Contacto</h6>
+        <div style="font-size:.875rem;">
+          <p class="mb-2"><i class="bi bi-geo-alt me-2" style="color:var(--gold);"></i>Av. Pablo Casals 640, Guadalajara</p>
+          <p class="mb-2"><i class="bi bi-telephone me-2" style="color:var(--gold);"></i>(33) 1234-5678</p>
+          <p class="mb-2"><i class="bi bi-whatsapp me-2" style="color:var(--gold);"></i>33-1234-5678</p>
+          <p class="mb-0"><i class="bi bi-envelope me-2" style="color:var(--gold);"></i>contacto@doctornombre.com</p>
+        </div>
+      </div>
+    </div>
+    <hr style="border-color:rgba(255,255,255,.1);margin:2rem 0 1rem;">
+    <div class="d-flex flex-wrap justify-content-between align-items-center" style="font-size:.78rem;color:rgba(255,255,255,.35);">
+      <p class="mb-0">© 2024 Dr. JulioHinojosa. Todos los derechos reservados.</p>
+      <div class="d-flex gap-3 align-items-center">
+        <a href="#" style="color:rgba(255,255,255,.35);text-decoration:none;font-size:.75rem;">Aviso de Privacidad</a>
+        <button class="btn-admin" onclick="showAdminLogin()">Admin</button>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== ADMIN LOGIN MODAL ===== -->
+<div class="modal fade" id="modalLogin" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered" style="max-width:370px;">
+    <div class="modal-content" style="border:none;border-radius:var(--radius);">
+      <div class="modal-body p-4">
+        <div class="text-center mb-4">
+          <div style="width:58px;height:58px;background:var(--teal);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;color:#fff;font-size:1.4rem;"><i class="bi bi-shield-lock"></i></div>
+          <h5 style="font-family:'Playfair Display',serif;color:var(--teal-dark);">Acceso Administrativo</h5>
+          <p class="text-muted" style="font-size:.83rem;">Ingresa la contraseña para continuar</p>
+        </div>
+        <input type="password" class="fc mb-2" id="adminPwd" placeholder="Contraseña" onkeydown="if(event.key==='Enter')checkPwd()">
+        <div id="loginErr" style="display:none;color:#C62828;font-size:.83rem;margin-bottom:.75rem;"><i class="bi bi-exclamation-circle me-1"></i>Contraseña incorrecta</div>
+        <button class="btn-gold w-100" style="justify-content:center;" onclick="checkPwd()">Ingresar <i class="bi bi-arrow-right"></i></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== ADMIN PANEL ===== -->
+<div id="adminPanel">
+  <div class="adm-sidebar">
+    <div class="adm-sidebar-brand">
+      <h5>Panel Admin</h5>
+      <p>Dr. Julio Hinojosa</p>
+    </div>
+    <nav class="mt-1">
+      <a href="#" class="adm-nav-link active" onclick="return showAdmSec('dashboard',this)"><i class="bi bi-grid-1x2"></i> Dashboard</a>
+      <a href="#" class="adm-nav-link" onclick="return showAdmSec('gallery',this)"><i class="bi bi-images"></i> Galería</a>
+      <a href="#" class="adm-nav-link" onclick="return showAdmSec('procedures',this)"><i class="bi bi-grid-3x3-gap"></i> Procedimientos</a>
+      <a href="#" class="adm-nav-link" onclick="return showAdmSec('hero',this)"><i class="bi bi-image"></i> Hero / Sobre Mí</a>
+      <a href="#" class="adm-nav-link" onclick="exitAdmin();return false;" style="margin-top:2rem;border-top:1px solid rgba(255,255,255,.1);"><i class="bi bi-box-arrow-left"></i> Salir del Panel</a>
+    </nav>
+  </div>
+  <div class="adm-content">
+
+    <!-- DASHBOARD -->
+    <div id="secDashboard">
+      <div class="adm-hdr"><h4>Dashboard</h4></div>
+      <div class="row g-3 mb-4" id="dashStats"></div>
+      <div class="adm-card">
+        <h6 style="font-family:'Playfair Display',serif;color:var(--teal-dark);margin-bottom:1rem;">Imágenes por categoría</h6>
+        <div id="dashCats"></div>
+      </div>
+    </div>
+
+    <!-- GALLERY -->
+    <div id="secGallery" style="display:none;">
+      <div class="adm-hdr"><h4>Gestor de Galería</h4></div>
+      <div class="adm-card">
+        <h6 style="font-family:'Playfair Display',serif;color:var(--teal-dark);margin-bottom:1.25rem;"><i class="bi bi-cloud-upload me-2"></i>Subir imagen</h6>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <label class="upload-zone" for="galFileIn">
+              <i class="bi bi-image"></i>
+              <p class="mb-1" style="font-weight:500;color:var(--teal-dark);">Selecciona o arrastra una imagen</p>
+              <p class="text-muted mb-0" style="font-size:.78rem;">JPG, PNG, WebP — Máx. 5MB</p>
+            </label>
+            <input type="file" id="galFileIn" accept="image/*" class="d-none" onchange="onGalFile(event)">
+          </div>
+          <div class="col-md-6">
+            <div class="preview-box" id="galPreview"><span class="text-muted" style="font-size:.83rem;"><i class="bi bi-eye me-1"></i>Vista previa</span></div>
+          </div>
+        </div>
+        <div class="row g-3 mt-2">
+          <div class="col-sm-4">
+            <label class="fl">Categoría</label>
+            <select class="fc" id="galCat"><option>Rinoplastía</option><option>Liposucción</option><option>Lifting Facial</option><option>Aumento de Labios</option><option>Blefaroplastia</option><option>Abdominoplastía</option></select>
+          </div>
+          <div class="col-sm-4">
+            <label class="fl">Tipo</label>
+            <select class="fc" id="galType"><option value="antes">Antes</option><option value="despues">Después</option></select>
+          </div>
+          <div class="col-sm-4 d-flex align-items-end">
+            <button class="btn-gold w-100" style="justify-content:center;" onclick="saveGalImg()"><i class="bi bi-floppy"></i> Guardar</button>
+          </div>
+        </div>
+      </div>
+      <div class="adm-card">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <h6 style="font-family:'Playfair Display',serif;color:var(--teal-dark);margin:0;"><i class="bi bi-collection me-2"></i>Imágenes guardadas</h6>
+          <select class="fc" style="width:auto;" onchange="loadAdmGal(this.value)" id="admGalFilter">
+            <option value="all">Todas</option><option>Rinoplastía</option><option>Liposucción</option><option>Lifting Facial</option><option>Aumento de Labios</option><option>Blefaroplastia</option><option>Abdominoplastía</option>
+          </select>
+        </div>
+        <div class="adm-gal-grid" id="admGalGrid"></div>
+      </div>
+    </div>
+
+    <!-- PROCEDURES -->
+    <div id="secProcedures" style="display:none;">
+      <div class="adm-hdr"><h4>Gestor de Procedimientos</h4></div>
+      <div class="row g-3" id="admProcGrid"></div>
+    </div>
+
+    <!-- HERO -->
+    <div id="secHero" style="display:none;">
+      <div class="adm-hdr"><h4>Hero &amp; Sobre Mí</h4></div>
+      <div class="adm-card">
+        <h6 style="font-family:'Playfair Display',serif;color:var(--teal-dark);margin-bottom:1.25rem;"><i class="bi bi-image me-2"></i>Imagen de Fondo — Hero</h6>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <label class="upload-zone" for="heroFileIn">
+              <i class="bi bi-image"></i>
+              <p class="mb-1" style="font-weight:500;color:var(--teal-dark);">Cambiar imagen del Hero</p>
+              <p class="text-muted mb-0" style="font-size:.78rem;">Recomendado: 1920×1080px</p>
+            </label>
+            <input type="file" id="heroFileIn" accept="image/*" class="d-none" onchange="onHeroFile(event)">
+          </div>
+          <div class="col-md-6"><div class="preview-box" id="heroPreview"><span class="text-muted" style="font-size:.83rem;"><i class="bi bi-eye me-1"></i>Vista previa</span></div></div>
+        </div>
+        <div class="d-flex gap-2 mt-3">
+          <button class="btn-gold" onclick="saveHeroImg()"><i class="bi bi-floppy"></i> Guardar</button>
+          <button class="btn-teal" style="background:#95A5A6;" onclick="delHeroImg()"><i class="bi bi-trash"></i> Eliminar</button>
+        </div>
+      </div>
+      <div class="adm-card">
+        <h6 style="font-family:'Playfair Display',serif;color:var(--teal-dark);margin-bottom:1.25rem;"><i class="bi bi-person-circle me-2"></i>Foto del Doctor — Sobre Mí</h6>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <label class="upload-zone" for="docFileIn">
+              <i class="bi bi-person-circle"></i>
+              <p class="mb-1" style="font-weight:500;color:var(--teal-dark);">Cambiar foto del doctor</p>
+              <p class="text-muted mb-0" style="font-size:.78rem;">Recomendado: proporción 3:4</p>
+            </label>
+            <input type="file" id="docFileIn" accept="image/*" class="d-none" onchange="onDocFile(event)">
+          </div>
+          <div class="col-md-6"><div class="preview-box" id="docPreview"><span class="text-muted" style="font-size:.83rem;"><i class="bi bi-eye me-1"></i>Vista previa</span></div></div>
+        </div>
+        <div class="d-flex gap-2 mt-3">
+          <button class="btn-gold" onclick="saveDocImg()"><i class="bi bi-floppy"></i> Guardar</button>
+          <button class="btn-teal" style="background:#95A5A6;" onclick="delDocImg()"><i class="bi bi-trash"></i> Eliminar</button>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /adm-content -->
+</div><!-- /adminPanel -->
+
+<!-- Lightbox -->
+<div class="modal fade" id="modalLB" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content" style="background:transparent;border:none;">
+      <div class="modal-body text-center p-2 position-relative">
+        <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3" data-bs-dismiss="modal"></button>
+        <img src="" id="lbImg" class="lb-img" alt="">
+        <p class="text-white mt-2 mb-0" id="lbCaption" style="font-size:.88rem;"></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
