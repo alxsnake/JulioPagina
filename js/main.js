@@ -1,11 +1,11 @@
 /* ---- DATA ---- */
 const PROCS = [
-  {id:'rinoplastia',  name:'Cateterismo',       icon:'bi-emoji-smile',      color:'linear-gradient(135deg,#2C4A52,#3D6470)', desc:'Procedimiento de mínima invasión, que utiliza un tubo delgado y flexible (catéter) insertado por la ingle o brazo hasta el corazón para diagnosticar o tratar afecciones cardiovasculares, como arterias obstruidas o arritmias'},
-  {id:'liposucion',   name:'Ecocardiograma Intravascular',        icon:'bi-body-text',         color:'linear-gradient(135deg,#A8854A,#C9A96E)', desc:' Uso de cámaras diminutas dentro de la arteria para visualizar su interior con alta precisión.'},
-  {id:'lifting',      name:'Estudio Funcional Coronario ',     icon:'bi-stars',             color:'linear-gradient(135deg,#1B3240,#2C4A52)', desc:'Medición precisa del flujo sanguíneo dentro de la arteria para decidir si es necesario colocar un stent.'},
-  {id:'labios',       name:'Otro',  icon:'bi-heart',             color:'linear-gradient(135deg,#C9A96E,#A8854A)', desc:'Ejemplo'},
-  {id:'blephar',      name:'Otro',     icon:'bi-eye',               color:'linear-gradient(135deg,#3D6470,#2C4A52)', desc:'Ejemplo'},
-  {id:'abdominoplastia', name:'Otro', icon:'bi-person-standing',   color:'linear-gradient(135deg,#1B3240,#3D6470)', desc:'Ejemplo'},
+  {id:'cateterismo',  name:'Cateterismo Diagnóstico',         icon:'bi-heart-pulse',   color:'linear-gradient(135deg,#1C3454,#2A4D72)', desc:'Procedimiento de mínima invasión que utiliza un catéter insertado por la ingle o el brazo para acceder al corazón, permitiendo diagnosticar obstrucciones coronarias, arritmias y otras afecciones cardiovasculares con alta precisión.'},
+  {id:'angioplastia', name:'Angioplastia Coronaria',           icon:'bi-activity',      color:'linear-gradient(135deg,#B82C2C,#921E1E)', desc:'Técnica intervencionista que restaura el flujo sanguíneo en arterias coronarias obstruidas mediante un pequeño balón que dilata la arteria desde adentro, aliviando síntomas de angina e infarto.'},
+  {id:'stent',        name:'Implante de Stent',                icon:'bi-heart',         color:'linear-gradient(135deg,#0F1E32,#1C3454)', desc:'Colocación de una pequeña malla metálica dentro de la arteria coronaria para mantenerla abierta de forma permanente y prevenir nuevas obstrucciones, mejorando el flujo sanguíneo al músculo cardiaco.'},
+  {id:'ivus',         name:'Ecocardiograma Intravascular',     icon:'bi-camera',        color:'linear-gradient(135deg,#2A4D72,#1C3454)', desc:'Uso de ultrasonido intravascular (IVUS) para visualizar el interior de las arterias coronarias con alta resolución, guiando intervenciones con mayor precisión y evaluando la gravedad de las lesiones.'},
+  {id:'ffr',          name:'Estudio Funcional Coronario',      icon:'bi-graph-up',      color:'linear-gradient(135deg,#921E1E,#B82C2C)', desc:'Medición del flujo sanguíneo coronario mediante FFR/iFR para determinar con precisión si una lesión requiere intervención o puede manejarse con tratamiento médico, evitando procedimientos innecesarios.'},
+  {id:'cierre',       name:'Cierre de Defectos Cardiacos',     icon:'bi-shield-check',  color:'linear-gradient(135deg,#1C3454,#0F1E32)', desc:'Corrección de comunicaciones interauriculares o interventriculares mediante dispositivos de cierre percutáneo, evitando la cirugía abierta y permitiendo una recuperación más rápida y segura.'},
 ];
 
 const LS_GAL  = 'drjulio_gallery';
