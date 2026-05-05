@@ -3,7 +3,7 @@ name: Deploy static site to GitHub Pages
 on:
   push:
     branches:
-      - main  # o master, según tu repo
+      - master
 
 permissions:
   contents: read
@@ -27,4 +27,9 @@ jobs:
           path: ./  # carpeta donde está tu index.html
 
       - name: Deploy to GitHub Pages
+        id: deployment
         uses: actions/deploy-pages@v4
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
