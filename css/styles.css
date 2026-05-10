@@ -181,3 +181,89 @@ footer{background:var(--teal-dark);color:rgba(255,255,255,.65);}
   .stat-num{font-size:1.6rem;}
   .doc-placeholder{height:320px;}
 }
+
+/* ===== ANIMACIONES AVANZADAS ===== */
+
+/* --- EKG Clínico (Hero) --- */
+.hero-ekg{
+  position:absolute;bottom:28px;left:0;
+  width:100%;height:90px;
+  z-index:1;pointer-events:none;
+}
+.ekg-base{
+  fill:none;
+  stroke:rgba(184,44,44,0.26);
+  stroke-width:2;
+  stroke-linecap:round;stroke-linejoin:round;
+  stroke-dasharray:1950;stroke-dashoffset:1950;
+  animation:ekg-draw 3.2s cubic-bezier(0.4,0,0.2,1) forwards;
+  animation-delay:0.5s;
+}
+.ekg-spark{
+  fill:none;
+  stroke:rgba(184,44,44,0.9);
+  stroke-width:2.8;
+  stroke-linecap:round;
+  stroke-dasharray:95 9999;
+  stroke-dashoffset:0;
+  filter:drop-shadow(0 0 5px rgba(184,44,44,0.8));
+  opacity:0;
+  animation:ekg-scan 3.9s linear infinite;
+  animation-delay:4s;
+}
+@keyframes ekg-draw{
+  from{stroke-dashoffset:1950;}
+  to{stroke-dashoffset:0;}
+}
+@keyframes ekg-scan{
+  0%  {stroke-dashoffset:0;    opacity:0;}
+  4%  {opacity:1;}
+  88% {opacity:1;}
+  100%{stroke-dashoffset:-1950;opacity:0;}
+}
+@media(max-width:767px){.hero-ekg{display:none;}}
+
+/* --- Divisores de sección animados --- */
+.anim-expand{
+  width:0!important;
+  transition:width 0.75s cubic-bezier(0.25,0.8,0.25,1) 0.15s!important;
+}
+.anim-expand.visible{width:55px!important;}
+
+/* --- Shimmer en placeholders de procedimientos --- */
+.proc-placeholder{position:relative;overflow:hidden;}
+.proc-placeholder::after{
+  content:'';
+  position:absolute;
+  top:0;left:-100%;
+  width:55%;height:100%;
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,0.14),transparent);
+  transform:skewX(-14deg);
+}
+.proc-card:hover .proc-placeholder::after{
+  animation:shimmer-slide 0.8s ease forwards;
+}
+@keyframes shimmer-slide{to{left:165%;}}
+
+/* --- Ripple en botones --- */
+.btn-gold,.btn-outline-gold,.btn-teal{position:relative;overflow:hidden;}
+.ripple-wave{
+  position:absolute;border-radius:50%;
+  background:rgba(255,255,255,0.28);
+  transform:scale(0);
+  animation:ripple-expand 0.65s linear forwards;
+  pointer-events:none;
+}
+@keyframes ripple-expand{to{transform:scale(4.5);opacity:0;}}
+
+/* --- Iconos sociales con rotación en hover --- */
+.nav-social a i,.ft-social a i{
+  display:inline-block;
+  transition:transform 0.32s cubic-bezier(0.25,0.8,0.25,1);
+}
+.nav-social a:hover i,.ft-social a:hover i{
+  transform:rotate(20deg) scale(1.15);
+}
+
+/* --- Stat numbers: transición suave durante counter --- */
+.stat-num{transition:color 0.3s;}

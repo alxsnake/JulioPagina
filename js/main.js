@@ -274,6 +274,55 @@ function loadAdmHero(){
   const d=lsGet(LS_DOC);  if(d) document.getElementById('docPreview').innerHTML=`<img src="${d}" style="max-width:100%;max-height:250px;object-fit:contain;border-radius:var(--radius-sm);">`;
 }
 
+/* ---- COUNTER ANIMATION ---- */
+function initCounters(){
+  const counterIO=new IntersectionObserver(entries=>{
+    entries.forEach(e=>{
+      if(!e.isIntersecting) return;
+      counterIO.unobserve(e.target);
+      const el=e.target;
+      const raw=el.textContent.trim();
+      const num=parseInt(raw.replace(/[^0-9]/g,''),10);
+      const suffix=raw.replace(/[0-9,]/g,'');
+      const dur=2000,steps=55;
+      let s=0;
+      const timer=setInterval(()=>{
+        s++;
+        const ease=1-Math.pow(1-s/steps,3);
+        const cur=Math.round(num*ease);
+        el.textContent=(cur>=1000?cur.toLocaleString('es-MX'):cur)+suffix;
+        if(s>=steps) clearInterval(timer);
+      },dur/steps);
+    });
+  },{threshold:0.6});
+  document.querySelectorAll('.stat-num').forEach(el=>counterIO.observe(el));
+}
+
+/* ---- RIPPLE EFFECT ---- */
+function initRipple(){
+  document.addEventListener('click',e=>{
+    const btn=e.target.closest('.btn-gold,.btn-outline-gold,.btn-teal');
+    if(!btn) return;
+    const r=document.createElement('span');
+    r.className='ripple-wave';
+    const rect=btn.getBoundingClientRect();
+    const size=Math.max(rect.width,rect.height);
+    r.style.cssText=`width:${size}px;height:${size}px;left:${e.clientX-rect.left-size/2}px;top:${e.clientY-rect.top-size/2}px;`;
+    btn.appendChild(r);
+    setTimeout(()=>r.remove(),700);
+  });
+}
+
+/* ---- DIVIDER EXPAND ANIMATION ---- */
+function initExpandDividers(){
+  const divIO=new IntersectionObserver(entries=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting){e.target.classList.add('visible');divIO.unobserve(e.target);}
+    });
+  },{threshold:0.4});
+  document.querySelectorAll('.anim-expand').forEach(el=>divIO.observe(el));
+}
+
 /* ---- INIT ---- */
 document.addEventListener('DOMContentLoaded',()=>{
   renderProcs();
@@ -281,4 +330,7 @@ document.addEventListener('DOMContentLoaded',()=>{
   loadHero();
   loadDoc();
   initIO();
+  initCounters();
+  initRipple();
+  initExpandDividers();
 });

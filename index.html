@@ -46,6 +46,10 @@
 <section id="inicio" style="padding:0;">
   <div id="hero">
     <div class="hero-bg" id="heroBg"></div>
+    <svg class="hero-ekg" viewBox="0 0 1400 100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" aria-hidden="true">
+      <path class="ekg-base" d="M0,55 L180,55 Q200,42 220,42 Q240,42 255,55 L278,55 L285,48 L293,6 L301,82 L309,55 L328,55 Q355,24 380,24 Q405,24 422,55 L605,55 Q625,42 645,42 Q665,42 680,55 L703,55 L710,48 L718,6 L726,82 L734,55 L753,55 Q780,24 805,24 Q830,24 847,55 L1400,55"/>
+      <path class="ekg-spark" d="M0,55 L180,55 Q200,42 220,42 Q240,42 255,55 L278,55 L285,48 L293,6 L301,82 L309,55 L328,55 Q355,24 380,24 Q405,24 422,55 L605,55 Q625,42 645,42 Q665,42 680,55 L703,55 L710,48 L718,6 L726,82 L734,55 L753,55 Q780,24 805,24 Q830,24 847,55 L1400,55"/>
+    </svg>
     <div class="container hero-content w-100">
       <div class="row align-items-center" style="min-height:100vh;padding-top:80px;">
         <div class="col-lg-7 py-5">
@@ -86,13 +90,13 @@
       <div class="col-lg-7 fade-in-right">
         <p class="sec-lbl">Conoce al Doctor</p>
         <h2 class="sec-title">Dr. JulioHinojosa</h2>
-        <div class="sec-divider"></div>
+        <div class="sec-divider anim-expand"></div>
         <p class="text-muted mb-3" style="line-height:1.85;">Con más de 15 años de experiencia en Cardiología Intervencionista y Hemodinamia, el Dr. Julio Hinojosa se ha consolidado como uno de los cardiólogos más reconocidos de Guadalajara. Su filosofía se basa en el diagnóstico oportuno, la intervención precisa y una atención completamente personalizada.</p>
         <p class="text-muted mb-4" style="line-height:1.85;">Graduado con honores de la Universidad de Guadalajara, realizó su especialidad en Cardiología en el Hospital de Cardiología del IMSS en la Ciudad de México, y su subespecialidad en Hemodinamia e Intervencionismo Cardiovascular.</p>
-        <div class="cred-badge"><div class="cred-icon"><i class="bi bi-award"></i></div><div><div class="cred-text">Médico Cirujano — Universidad de Guadalajara</div><div class="cred-sub">Graduado con Mención Honorífica, 2005</div></div></div>
-        <div class="cred-badge"><div class="cred-icon"><i class="bi bi-patch-check"></i></div><div><div class="cred-text">Especialidad en Cardiología — Hospital de Cardiología, IMSS CDMX</div><div class="cred-sub">Certificado por el Consejo Mexicano de Cardiología, 2009</div></div></div>
-        <div class="cred-badge"><div class="cred-icon"><i class="bi bi-globe"></i></div><div><div class="cred-text">Fellowship Internacional — Cleveland Clinic, Ohio</div><div class="cred-sub">Cardiología Intervencionista y Hemodinamia, 2011</div></div></div>
-        <div class="cred-badge"><div class="cred-icon"><i class="bi bi-shield-check"></i></div><div><div class="cred-text">Miembro Titular — SMC</div><div class="cred-sub">Sociedad Mexicana de Cardiología</div></div></div>
+        <div class="cred-badge fade-in" style="transition-delay:.08s;"><div class="cred-icon"><i class="bi bi-award"></i></div><div><div class="cred-text">Médico Cirujano — Universidad de Guadalajara</div><div class="cred-sub">Graduado con Mención Honorífica, 2005</div></div></div>
+        <div class="cred-badge fade-in" style="transition-delay:.22s;"><div class="cred-icon"><i class="bi bi-patch-check"></i></div><div><div class="cred-text">Especialidad en Cardiología — Hospital de Cardiología, IMSS CDMX</div><div class="cred-sub">Certificado por el Consejo Mexicano de Cardiología, 2009</div></div></div>
+        <div class="cred-badge fade-in" style="transition-delay:.38s;"><div class="cred-icon"><i class="bi bi-globe"></i></div><div><div class="cred-text">Fellowship Internacional — Cleveland Clinic, Ohio</div><div class="cred-sub">Cardiología Intervencionista y Hemodinamia, 2011</div></div></div>
+        <div class="cred-badge fade-in" style="transition-delay:.54s;"><div class="cred-icon"><i class="bi bi-shield-check"></i></div><div><div class="cred-text">Miembro Titular — SMC</div><div class="cred-sub">Sociedad Mexicana de Cardiología</div></div></div>
       </div>
     </div>
   </div>
@@ -104,7 +108,7 @@
     <div class="text-center mb-5 fade-in">
       <p class="sec-lbl">Nuestros Servicios</p>
       <h2 class="sec-title">Procedimientos Especializados</h2>
-      <div class="sec-divider mx-auto"></div>
+      <div class="sec-divider mx-auto anim-expand"></div>
       <p class="text-muted" style="max-width:580px;margin:0 auto;">Ofrecemos una amplia gama de estudios y procedimientos hemodinámicos e intervencionistas con la tecnología más avanzada disponible.</p>
     </div>
     <div class="row g-4" id="proceduresGrid"></div>
@@ -117,7 +121,7 @@
     <div class="text-center mb-5 fade-in">
       <p class="sec-lbl">Casos Clínicos</p>
       <h2 class="sec-title">Galería de Procedimientos</h2>
-      <div class="sec-divider mx-auto"></div>
+      <div class="sec-divider mx-auto anim-expand"></div>
       <p class="text-muted" style="max-width:580px;margin:0 auto;">Casos reales de nuestros pacientes. Cada procedimiento refleja nuestro compromiso con la excelencia cardiovascular.</p>
     </div>
     <div class="d-flex flex-wrap gap-2 justify-content-center mb-5 fade-in" id="galFilters"></div>
@@ -131,7 +135,7 @@
     <div class="text-center mb-5 fade-in">
       <p class="sec-lbl">Lo que dicen nuestros pacientes</p>
       <h2 class="sec-title">Testimonios</h2>
-      <div class="sec-divider mx-auto"></div>
+      <div class="sec-divider mx-auto anim-expand"></div>
     </div>
     <div id="testCarousel" class="carousel slide fade-in" data-bs-ride="carousel" data-bs-interval="5000">
       <div class="carousel-inner">
@@ -202,7 +206,7 @@
     <div class="text-center mb-5 fade-in">
       <p class="sec-lbl">Estamos Para Ti</p>
       <h2 class="sec-title">Contacto &amp; Ubicación</h2>
-      <div class="sec-divider mx-auto"></div>
+      <div class="sec-divider mx-auto anim-expand"></div>
     </div>
     <div class="row g-4">
       <div class="col-lg-5">
@@ -244,7 +248,7 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-7 fade-in-right">
+      <div class="col-lg-7 fade-in-right" style="display:none;">
         <div class="contact-card">
           <h5 style="font-family:'Playfair Display',serif;color:var(--teal-dark);margin-bottom:1.5rem;">Envíanos un Mensaje</h5>
           <form id="contactForm" onsubmit="handleContact(event)">
