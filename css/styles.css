@@ -2,8 +2,8 @@
 :root {
   --cream: #F2F5FA;
   --cream-light: #F7FAFD;
-  --gold: #B82C2C;
-  --gold-dark: #921E1E;
+  --gold: #7B2D3E;
+  --gold-dark: #5E1F2E;
   --teal: #1C3454;
   --teal-dark: #0F1E32;
   --teal-light: #2A4D72;
@@ -67,7 +67,7 @@ h1,h2,h3,h4,h5{font-family:'Playfair Display',serif;}
 
 /* === BUTTONS === */
 .btn-gold{background:var(--gold);color:#fff;border:none;padding:.85rem 2.4rem;border-radius:50px;font-family:'DM Sans',sans-serif;font-size:.92rem;font-weight:500;letter-spacing:.4px;transition:var(--tr);text-decoration:none;display:inline-flex;align-items:center;gap:.5rem;cursor:pointer;}
-.btn-gold:hover{background:var(--gold-dark);color:#fff;transform:translateY(-2px);box-shadow:0 8px 25px rgba(184,44,44,.4);}
+.btn-gold:hover{background:var(--gold-dark);color:#fff;transform:translateY(-2px);box-shadow:0 8px 25px rgba(123,45,62,.4);}
 .btn-outline-gold{background:transparent;color:var(--gold);border:2px solid var(--gold);padding:.85rem 2.4rem;border-radius:50px;font-family:'DM Sans',sans-serif;font-size:.92rem;font-weight:500;transition:var(--tr);text-decoration:none;display:inline-flex;align-items:center;gap:.5rem;}
 .btn-outline-gold:hover{background:var(--gold);color:#fff;transform:translateY(-2px);}
 .btn-teal{background:var(--teal);color:#fff;border:none;padding:.6rem 1.5rem;border-radius:50px;font-size:.85rem;font-weight:500;transition:var(--tr);text-decoration:none;display:inline-flex;align-items:center;gap:.4rem;cursor:pointer;}
@@ -197,7 +197,7 @@ footer{background:var(--teal-dark);color:rgba(255,255,255,.65);}
 }
 .ekg-base{
   fill:none;
-  stroke:rgba(184,44,44,0.26);
+  stroke:rgba(123,45,62,0.26);
   stroke-width:2;
   stroke-linecap:round;stroke-linejoin:round;
   stroke-dasharray:1950;stroke-dashoffset:1950;
@@ -206,12 +206,12 @@ footer{background:var(--teal-dark);color:rgba(255,255,255,.65);}
 }
 .ekg-spark{
   fill:none;
-  stroke:rgba(184,44,44,0.9);
+  stroke:rgba(123,45,62,0.9);
   stroke-width:2.8;
   stroke-linecap:round;
   stroke-dasharray:95 9999;
   stroke-dashoffset:0;
-  filter:drop-shadow(0 0 5px rgba(184,44,44,0.8));
+  filter:drop-shadow(0 0 5px rgba(123,45,62,0.8));
   opacity:0;
   animation:ekg-scan 3.9s linear infinite;
   animation-delay:4s;
@@ -271,3 +271,41 @@ footer{background:var(--teal-dark);color:rgba(255,255,255,.65);}
 
 /* --- Stat numbers: transición suave durante counter --- */
 .stat-num{transition:color 0.3s;}
+
+/* --- Heartbeat icon (hero spec) --- */
+.hero-heart-icon{
+  display:inline-block;
+  color:var(--gold);
+  font-size:1em;
+  vertical-align:middle;
+  animation:heartbeat-icon 1.3s ease-in-out infinite;
+}
+@keyframes heartbeat-icon{
+  0%,100%{transform:scale(1);}
+  14%    {transform:scale(1.25);}
+  28%    {transform:scale(1);}
+  42%    {transform:scale(1.12);}
+  56%    {transform:scale(1);}
+}
+
+/* --- EKG heart (aparece al terminar el trazado) --- */
+.ekg-heart-text{
+  fill:var(--gold);
+  transform-box:fill-box;
+  transform-origin:center;
+  opacity:0;
+  animation:
+    ekg-heart-appear 0.45s cubic-bezier(0.175,0.885,0.32,1.275) 3.7s forwards,
+    heartbeat-ekg    1.3s ease-in-out 4.15s infinite;
+}
+@keyframes ekg-heart-appear{
+  from{opacity:0;transform:scale(0);}
+  to  {opacity:1;transform:scale(1);}
+}
+@keyframes heartbeat-ekg{
+  0%,100%{transform:scale(1);}
+  15%    {transform:scale(1.4);}
+  30%    {transform:scale(0.92);}
+  45%    {transform:scale(1.22);}
+  60%    {transform:scale(1);}
+}
